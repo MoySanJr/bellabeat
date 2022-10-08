@@ -24,7 +24,7 @@ intensities <- read.csv("~/Bellabeat/archive (2)/Fitabase Data 4.12.16-5.12.16/d
 sleepDay <- read.csv("~/Bellabeat/archive (2)/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
 weight <- read.csv("~/Bellabeat/archive (2)/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")
 
-##Converted date columns to so keep things consisent and easy to use.##
+##Converted date columns to keep things consisent and easy to use.##
 activity$ActivityDate=as.POSIXct(activity$ActivityDate, format="%m/%d/%Y", tz=Sys.timezone())
 glimpse(activity)
 activity$date <- format(activity$ActivityDate, format = "%m/%d/%y")
